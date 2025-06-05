@@ -1,0 +1,96 @@
+body {
+  background-color: #1e1e2f;
+  margin-top: 40px;
+}
+.countdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sub-cont {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 54px;
+}
+
+.countdown-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: white;
+  text-align: center;
+}
+
+.circle-wrapper {
+  margin-top: 35px;
+  margin-left: -20px;
+  margin-bottom: 25px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.timer-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.pause-button {
+  margin-top: 35px;
+  padding: 12px 35px;
+
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #a604c9;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.pause-button:hover {
+  background-color: #bb04e2;
+}
+
+.resume-pause-btn {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  gap: 19px;
+  margin-left: -51px;
+  position: relative;
+}
+
+.bi-arrow-left,
+.bi-arrow-clockwise {
+  margin-top: 0;
+  font-weight: 900;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.bi-arrow-clockwise {
+  background-color: #4d4d67;
+  border: none;
+  border-radius: 50%;
+  color: black;
+  padding: 7px 12px;
+}
+.bi-arrow-clockwise:hover {
+  background-color: #5e5e7a;
+}
+
+.bi-arrow-left {
+  margin-left: -72px;
+}

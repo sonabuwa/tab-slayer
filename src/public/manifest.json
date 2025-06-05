@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Slayer",
+  "version": "1.0",
+  "description": "Slay time-wasting tabs by auto-closing them when your set time runs out.",
+  "permissions": ["tabs", "storage", "scripting", "alarms"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}

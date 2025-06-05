@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  max-width: 420px;
+  max-height: 812px;
+  background-color: #070707f1;
+
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Main container */
+.timeinput-page {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card style like countdown screen */
+/* .timer-card {
+  background-color: #1e1e2f;
+  border: 2px solid #a604c9;
+  border-radius: 16px;
+  padding: 40px 30px;
+  width: 90%;
+  max-width: 350px;
+  box-shadow: 0px 4px 20px rgba(166, 4, 201, 0.5);
+  text-align: center;
+  color: white;
+} */
+
+.timeinput-heading {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+/* Dropdown layout */
+.timer-dropdowns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+/* Select elements */
+.timer-dropdowns select {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #272953;
+  color: white;
+  font-size: 16px;
+}
+
+/* Label styling */
+.selectHours,
+.selectMinutes,
+.selectSeconds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.selectHours::before,
+.selectMinutes::before,
+.selectSeconds::before {
+  content: attr(data-label);
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+/* Start Button */
+.start-button {
+  margin-top: 20px;
+  margin-left: 11px;
+  padding: 12px 15px;
+  background-color: #a604c9;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.start-button:hover {
+  background: #bb04e2;
+  text-decoration: none;
+  color: white;
+}
+
+.bi-stopwatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 49px;
+  font-weight: 900;
+  font-size: 20px;
+}
